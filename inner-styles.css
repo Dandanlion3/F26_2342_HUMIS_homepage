@@ -1,0 +1,125 @@
+:root {
+    --green: #676E3D;
+}
+
+body {
+    background-color: #292827;
+    display: flex;
+    justify-content: center;
+}
+
+section.container {
+    background-color: #fff;
+    width: 780px;
+    min-height: 600px;
+
+    section.middle {
+        display: flex;
+
+        /*!*any element that is a child*!*/
+        /*> * {*/
+        /*    border: 1px solid red;*/
+        /*}*/
+
+        section {
+            &.left-side {
+                width: 30%;
+                background-color: #F2F1F1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                nav {
+                    margin-top: 20px;
+
+                    a {
+                        display: block;
+                        color: black;
+                        border-bottom: 2px solid #767B4D;
+                        text-decoration: none;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        padding: 10px 0 10px 10px;
+
+                        &:hover {
+                            background-color: #767B4D;
+                            color: white;
+                        }
+                    }
+                }
+
+                .links {
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid black;
+                }
+            }
+
+
+            &.right-side {
+                width: 70%;
+                min-height: 600px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                padding: 5px 20px;
+                border: 10px solid blue;
+
+                nav {
+                    /*text-align: right;*/
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 5px;
+                    font-size: 10px;
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    &.top-nav {
+                        text-transform: uppercase;
+                    }
+
+                    &.bottom-nav {
+                        text-transform: lowercase;
+                        font-size: 70%
+                    }
+                }
+
+                main {
+                    border: 1px dotted black;
+                    h1 {
+                        color: red;
+                        font-weight: normal;
+                        text-transform: uppercase;
+                        border-bottom: 2px dashed var(--uofuRed);
+                        font-size: 16px;
+                    }
+                    img {
+                        &.pull-right {
+                            float: right;
+                            width: 150px;
+                            margin: 0 0 15px 15px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: var(--green);
+        color: white;
+        font-size: 11px;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+}
