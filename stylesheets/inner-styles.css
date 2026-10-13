@@ -13,6 +13,12 @@ section.container {
     width: 780px;
     min-height: 600px;
 
+    header {
+        img {
+            display: block;
+        }
+    }
+
     section.middle {
         display: flex;
 
@@ -53,18 +59,19 @@ section.container {
                     display: flex;
                     flex-direction: column;
                     border: 1px solid black;
+                    margin-botton: 2rem;
                 }
             }
 
 
             &.right-side {
                 width: 70%;
-                min-height: 600px;
+                /*min-height: 600px;*/
                 display: flex;
                 justify-content: space-between;
                 flex-direction: column;
                 padding: 5px 20px;
-                border: 10px solid blue;
+                /*border: 10px solid blue;*/
 
                 nav {
                     /*text-align: right;*/
@@ -94,6 +101,7 @@ section.container {
 
                 main {
                     border: 1px dotted black;
+
                     h1 {
                         color: red;
                         font-weight: normal;
@@ -101,6 +109,7 @@ section.container {
                         border-bottom: 2px dashed var(--uofuRed);
                         font-size: 16px;
                     }
+
                     img {
                         &.pull-right {
                             float: right;
