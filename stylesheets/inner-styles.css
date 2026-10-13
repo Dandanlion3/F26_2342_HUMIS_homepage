@@ -55,6 +55,10 @@ section.container {
                     }
                 }
 
+                &.active {
+                    font-weight: bold;
+                }
+
                 .links {
                     display: flex;
                     flex-direction: column;
