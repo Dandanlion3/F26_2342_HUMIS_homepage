@@ -5,8 +5,62 @@
     <title>HUMIS "inner" pages layout</title>
     <link rel="stylesheet" href="stylesheets/inner-styles.css">
     <link rel="stylesheet" href="stylesheets/typography.css">
+
+    <style>
+        main {
+            nav.inner-nav {
+                dispaly: flex;
+                gap: 5px;
+                font-size: 11px;
+                color: var(--burgundy);
+                border-bottom: 2px solid black;
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+
+                a {
+                    text-transform: uppercase;
+                    color: var(--burgundy);
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        div {
+            h6 {
+                color: black;
+            }
+        }
+        section.content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            h3 {
+                margin:0;
+            }
+
+            div {
+                h6{
+                color: var(--dark);
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        /*main nav.inner-nav {*/
+        /*    display: flex;*/
+        /*}*/
+    </style>
 </head>
 <body>
+
 
 <section class="container">
 
@@ -44,7 +98,7 @@
         </section>
 
         <section class="right-side">
-            <nav class="top-nav">
+            <nav class="secondary top-nav">
                 <a href="#">Campus directory </a>
                 <a href="#">Department calendar </a>
                 <a href="#">Contact us </a>
@@ -54,44 +108,59 @@
             </nav>
 
             <main>
-                <h2>
-                    ABOUT US
-                </h2>
-                <p>The History faculty strives to make outstanding scholarly contributions to the discipline
-                    and to instill historical knowledge, perspective on human experience, critical thinking
-                    skills, and effective writing in all our graduate and undergraduate students. We are
-                    also a community of citizens engaged in service and devoted to the enrichment of
-                    intellectual and public life at the University, throughout Utah, and beyond.</p>
-                <a href="#">
-                    <img class="pull-right" src="files/students-graduating.png" alt="Students graduating"/>
-                </a>
-                <p> We offer the B.A., M.A., and Ph.D. degrees. History
-                    students can explore periods and regions ranging
-                    from ancient Mesopotamia, Greece, and Rome to the
-                    modern Middle East, Asia, Europe, and the Americas.
-                    Our faculty specializes in topics that include politics,
-                    diplomacy, warfare, and intellectual life as well as
-                    gender and women’s history, medicine and science,
-                    colonialism and intercultural contact, religious
-                    expression and practices, and environmental history.
-                    Our curriculum reflects long-standing disciplinary
-                    tradition in its organization by region, nation-state,
-                    and time period, but it also embodies a newer
-                    orientation toward transnational, comparative, and
-                    thematic courses. Faculty involvement in Middle
-                    Eastern Studies, Gender Studies, Asian Studies, Ethnic Studies, International Studies,
-                    Latin American Studies, and Environmental Studies reflects the department’s long-
-                    standing commitment to interdisciplinary programs.</p>
-                <p> History courses emphasize written and oral skills, analysis and critical thinking, and
-                    the ability to assess conflicting interpretations. These skills prepare students for the
-                    responsibilities of citizenship and cultivate an awareness of the complexities of life.
-                    History provides valuable preparation for careers in university and college teaching
-                    and research, primary and secondary education, law, government, public service, journalism,
-                    libraries and museums, international business, and medicine.</p>
+                <nav class="inner-nav">
+                    <a href="#">Contact information</a>
+                    <a href="#">Faculty directory</a>
+                    <a href="#">Staff directory </a>
+                </nav>
+
+                <h3>Contact US</h3>
+
+                <div>
+                    <h6>U.S. MAIL</h6>
+                    <p>
+                        University of Utah<br/>
+                        Department of History<br/>
+                        380 S 1400 E RM 211<br/>
+                        Salt Lake City, UT 84112-0311
+                    </p>
+                </div>
+
+                <div>
+                    <h6>CAMPUS MAIL</h6>
+                    <p>
+                        Department of History<br/>
+                        211 C HALL<br/>
+                    </p>
+                </div>
+
+                <div>
+                    <h6>PHONE</h6>
+                    <p>
+                        (801) 581-6121
+                    </p>
+                </div>
+
+                <div>
+                    <h6>FAX</h6>
+                    <p>
+                        (801) 585-0580
+                    </p>
+                </div>
+
+                <div>
+                    <h6>HOURS</h6>
+                    <p>
+                        Monday - Friday<br/>
+                        8:00 AM - 5:00 PM
+                    </p>
+                </div>
+
+
 
             </main>
 
-            <nav class="bottom-nav">
+            <nav class="secondary bottom-nav">
                 <a href="#">Disclaimer</a>
                 <a href="#">Text only</a>
                 <a href="#">Webmaster</a>

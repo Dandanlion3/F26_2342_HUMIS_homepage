@@ -1,5 +1,6 @@
 :root {
-    --green: #676E3D;
+    --burgundy: #A12D37;
+    --dark: black;
 }
 
 body {
@@ -77,8 +78,7 @@ section.container {
                 padding: 5px 20px;
                 /*border: 10px solid blue;*/
 
-                nav {
-                    /*text-align: right;*/
+                nav.secondary {
                     display: flex;
                     justify-content: flex-end;
                     gap: 5px;
@@ -97,7 +97,7 @@ section.container {
                         text-transform: uppercase;
                     }
 
-                    &.bottom-nav {
+                    &.bottom-nav.secondary {
                         text-transform: lowercase;
                         font-size: 70%
                     }
