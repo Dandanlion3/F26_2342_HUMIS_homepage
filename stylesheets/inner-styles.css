@@ -1,5 +1,8 @@
+@import 'images.css';
+@import 'typography.css';
+
 :root {
-    --burgundy: #A12D37;
+    /*--burgundy: #A12D37;*/
     --dark: black;
 }
 
@@ -7,132 +10,125 @@ body {
     background-color: #292827;
     display: flex;
     justify-content: center;
-}
+    font-family: Arial, Helvetica, sans-serif;
 
-section.container {
-    background-color: #fff;
-    width: 780px;
-    min-height: 600px;
+    section.container {
+        background-color: #fff;
+        width: 780px;
+        min-height: 600px;
 
-    header {
-        img {
-            display: block;
+        header {
+            img {
+                display: block;
+            }
         }
-    }
 
-    section.middle {
-        display: flex;
+        section.middle {
+            display: flex;
 
-        /*!*any element that is a child*!*/
-        /*> * {*/
-        /*    border: 1px solid red;*/
-        /*}*/
+            /*!*any element that is a child*!*/
+            /*> * {*/
+            /*    border: 1px solid red;*/
+            /*}*/
 
-        section {
-            &.left-side {
-                width: 30%;
-                background-color: #F2F1F1;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-
-                nav {
-                    margin-top: 20px;
-
-                    a {
-                        display: block;
-                        color: black;
-                        border-bottom: 2px solid #767B4D;
-                        text-decoration: none;
-                        font-size: 10px;
-                        text-transform: uppercase;
-                        padding: 10px 0 10px 10px;
-
-                        &:hover {
-                            background-color: #767B4D;
-                            color: white;
-                        }
-                    }
-                }
-
-                &.active {
-                    font-weight: bold;
-                }
-
-                .links {
+            section {
+                &.left-side {
+                    width: 30%;
+                    background-color: #F2F1F1;
                     display: flex;
                     flex-direction: column;
-                    border: 1px solid black;
-                    margin-botton: 2rem;
-                }
-            }
+                    justify-content: space-between;
+                    align-items: center;
 
+                    nav {
+                        margin-top: 20px;
 
-            &.right-side {
-                width: 70%;
-                /*min-height: 600px;*/
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column;
-                padding: 5px 20px;
-                /*border: 10px solid blue;*/
+                        a {
+                            display: block;
+                            color: black;
+                            border-bottom: 2px solid #767B4D;
+                            text-decoration: none;
+                            font-size: 10px;
+                            text-transform: uppercase;
+                            padding: 10px 0 10px 10px;
 
-                nav.secondary {
-                    display: flex;
-                    justify-content: flex-end;
-                    gap: 5px;
-                    font-size: 10px;
+                            &:hover {
+                                background-color: #767B4D;
+                                color: white;
+                            }
 
-                    a {
-                        color: black;
-                        text-decoration: none;
-
-                        &:hover {
-                            text-decoration: underline;
+                            &.active {
+                                background-color: #767B4D;
+                                color: white;
+                                font-weight: bold;
+                            }
                         }
                     }
 
-                    &.top-nav {
-                        text-transform: uppercase;
-                    }
-
-                    &.bottom-nav.secondary {
-                        text-transform: lowercase;
-                        font-size: 70%
+                    .links {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 2rem;
                     }
                 }
 
-                main {
-                    border: 1px dotted black;
 
-                    h1 {
-                        color: red;
-                        font-weight: normal;
-                        text-transform: uppercase;
-                        border-bottom: 2px dashed var(--uofuRed);
-                        font-size: 16px;
+                &.right-side {
+                    width: 70%;
+                    /*min-height: 600px;*/
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    padding: 5px 20px;
+                    /*border: 10px solid blue;*/
+
+                    nav.secondary {
+                        display: flex;
+                        justify-content: flex-end;
+                        gap: 5px;
+                        font-size: 10px;
+
+                        a {
+                            color: black;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+
+                        &.top-nav {
+                            text-transform: uppercase;
+                        }
+
+                        &.bottom-nav.secondary {
+                            text-transform: lowercase;
+                            font-size: 70%
+                        }
                     }
 
-                    img {
-                        &.pull-right {
-                            float: right;
-                            width: 150px;
-                            margin: 0 0 15px 15px;
+                    main {
+                        min-height: 600px;
+
+                        h1 {
+                            color: red;
+                            font-weight: normal;
+                            text-transform: uppercase;
+                            border-bottom: 2px dashed var(--uofuRed);
+                            font-size: 16px;
                         }
 
                     }
                 }
             }
         }
-    }
 
-    footer {
-        background-color: var(--green);
-        color: white;
-        font-size: 11px;
-        text-align: center;
-        padding: 10px 0;
+        footer {
+            background-color: var(--green);
+            color: white;
+            font-size: 11px;
+            text-align: center;
+            padding: 10px 0;
+        }
     }
-
 }
