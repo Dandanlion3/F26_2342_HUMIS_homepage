@@ -159,7 +159,6 @@ body {
                             .right-column {
                                 flex: 1;
                                 min-width: 0;
-                                box-sizing: border-box;
                                 padding-top: 0;
 
                                 h5 {
@@ -168,16 +167,15 @@ body {
                                 }
 
                                 h6 {
-                                    color: black;
                                     font-size: 0.85rem;
-                                    margin: 1.25rem 0 1rem;
+                                    margin: 1rem 0 0.5rem;
                                 }
 
                                 p {
                                     font-size: 0.75rem;
                                     line-height: 1.2;
                                     text-align: justify;
-                                    margin: 12px 0;
+                                    margin: 0 0 12px;
                                 }
 
                                     a {

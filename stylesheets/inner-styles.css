@@ -59,6 +59,12 @@ body {
                                 background-color: #767B4D;
                                 color: white;
                             }
+
+                            &.active {
+                                background-color: #767B4D;
+                                color: white;
+                                font-weight: bold;
+                            }
                         }
                     }
 
@@ -117,11 +123,11 @@ body {
                             font-size: 16px;
                         }
 
-                        &.fellowship-page {
+                        &.fellowship {
                             min-height: 650px;
                             padding: 30px 10px 0 10px;
 
-                            h2 {
+                            h5 {
                                 color: var(--burgundy);
                                 font-size: 0.85rem;
                                 text-transform: uppercase;
