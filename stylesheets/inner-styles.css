@@ -3,7 +3,7 @@
 @import 'layouts.css';
 
 :root {
-    /*--burgundy: #A12D37;*/
+    --burgundy: #A12D37;
     --dark: black;
 }
 
@@ -34,6 +34,8 @@ body {
 
             section {
                 &.left-side {
+                    border-right: 1px solid #9da67b;
+                    box-sizing: border-box;
                     width: 30%;
                     background-color: #F2F1F1;
                     display: flex;
@@ -57,12 +59,6 @@ body {
                                 background-color: #767B4D;
                                 color: white;
                             }
-
-                            &.active {
-                                background-color: #767B4D;
-                                color: white;
-                                font-weight: bold;
-                            }
                         }
                     }
 
@@ -76,8 +72,10 @@ body {
 
                 &.right-side {
                     width: 70%;
+                    min-width: 0;
                     /*min-height: 600px;*/
                     display: flex;
+                    box-sizing: border-box;
                     justify-content: space-between;
                     flex-direction: column;
                     padding: 5px 20px;
@@ -117,6 +115,23 @@ body {
                             text-transform: uppercase;
                             border-bottom: 2px dashed var(--uofuRed);
                             font-size: 16px;
+                        }
+
+                        &.fellowship-page {
+                            min-height: 650px;
+                            padding: 30px 10px 0 10px;
+
+                            h2 {
+                                color: var(--burgundy);
+                                font-size: 0.85rem;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                margin: 0 0 18px;
+                            }
+
+                            p {
+                                font-size: 0.78rem;
+                            }
                         }
 
                     }
